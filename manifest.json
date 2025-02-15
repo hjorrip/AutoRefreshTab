@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Refresh Tab",
+  "version": "1.0",
+  "description": "Refresh the current tab at a specified interval.",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon48.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Auto Refresh Tab"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
+
